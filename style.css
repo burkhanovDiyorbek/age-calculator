@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+body {
+  width: 100%;
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(240, 240, 240);
+  padding: 20px 0;
+}
+.container {
+  border-radius: 24px 24px 200px 24px;
+  padding: 56px;
+  max-width: 738px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  margin: 16px;
+}
+.for-inp {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+label {
+  color: #716f6f;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+label span {
+  font-style: italic;
+  font-weight: 400;
+}
+input {
+  color: rgb(21, 21, 21);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 1%;
+  padding: 12px 24px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 8px;
+  max-width: 111px;
+  outline: none;
+}
+input:focus {
+  border: 1px solid rgb(133, 77, 255);
+}
+.for-btn {
+  width: 100%;
+  position: relative;
+  margin-bottom: 48px;
+}
+button {
+  width: 96px;
+  height: 96px;
+  background: #854dff;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  right: 26px;
+  top: -50px;
+}
+button:hover {
+  background: #000;
+}
+line {
+  display: block;
+  width: 95%;
+  height: 1px;
+  background: #dcdcdc;
+}
+.result h2 {
+  color: #151515;
+  font-size: 104px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 110%;
+  letter-spacing: -2.08px;
+}
+
+.result span {
+  color: #854dff;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 48px 17px;
+    margin: 16px;
+    max-width: 327px;
+    margin: 0 auto;
+    border-radius: 24px 24px 100px 24px;
+  }
+  label {
+    font-size: 12px;
+  }
+  label span {
+    font-size: 7px;
+  }
+  input {
+    padding: 6px 8px;
+    font-size: 20px;
+    max-width: 61px;
+    height: 34px;
+  }
+  button {
+    width: 64px;
+    height: 64px;
+    right: 45%;
+    top: -30px;
+    margin: 0 auto;
+  }
+  .result h2 {
+    font-size: 56px;
+  }
+}
